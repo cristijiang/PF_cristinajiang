@@ -1,0 +1,287 @@
+body {
+    background-color: #fffef9;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*RESET*/
+* {
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+/*HEADER*/
+/*
+.menu-navegacion {
+    background-color: #F5E8DC;
+}
+*/
+.menu-nav {
+    position: fixed;
+    background-color: #F5E8DC;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+
+.menu-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-height: auto; /* Establece un ancho máximo para pantallas más grandes */
+    width: 100%; /* Ajusta el ancho máximo del contenedor */
+    max-width: 1600px; /* Establece un ancho máximo para pantallas más grandes */
+    margin: 0; /* Centra el contenedor horizontalmente en la pantalla */
+
+
+}
+
+.menu-nav .container .logo {
+    justify-content: flex-start;
+    margin-left: 0; 
+    max-width: 70%; /* La imagen nunca será más ancha que su contenedor */
+    max-height: 100%;
+
+}
+
+.menu-nav .container .list-indice .text {
+    font-size: 1rem;
+}
+
+.menu-nav ul.list-indice {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 60%;
+}
+.menu-nav .list-indice li{
+    margin-right: 20px;
+}
+.menu-nav .list-indice li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.menu-nav .list-indice li > a:hover {
+    text-decoration: underline;
+    color: sienna;
+
+}
+@media (max-width: 768px) {
+    .menu-nav {
+        flex-direction: column; 
+    }
+
+    .menu-nav .container {
+         margin-left: 0;
+         max-width: 100%;
+    }
+
+    .menu-nav .container .logo{
+       max-width: 60%;
+    }
+
+    .list-indice {
+        flex-direction: column;
+        
+    }
+
+    .list-indice li {
+        margin-right: 0;
+        margin-bottom: 0;
+        justify-content:flex-end;
+    }
+
+    .menu-nav .container .list-indice .text {
+        font-size: 0.7rem;
+    }
+
+    .menu-nav ul.list-indice {
+        text-align: right;
+      }
+      
+    .menu-nav ul.list-indice li {
+        margin-right: 0;
+        margin-bottom: 0; /* Añade espacio entre elementos de la lista en versiones móviles */
+        line-height: 0.8;
+      }
+
+}
+
+
+
+/*MAIN*/
+
+
+
+main {
+    margin-top: 100px;    
+}
+
+main .container > div {
+    margin: 1rem;
+}
+
+.tiana-welcome {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+.text {
+    text-align: justify;
+    font-size: 1rem; 
+
+}
+
+
+main .container-fluid  {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #f9ebdb;
+    color: #040404; 
+}
+
+.btn-primary:hover {
+    background-color: #c9987c; 
+}
+
+#mapa-tiana {
+    margin-top: 20px;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+.projects-description{
+    text-align: center;
+}
+
+.title-quienessomos{
+    font: bold;
+    text-align: right;
+    color: #230007;
+}
+
+.title-proyectos{
+    font: bold;
+    color: #230007;
+}
+
+.title-servicios{
+    font: bold;
+    color: #230007;
+    text-align: center;
+}
+
+.card{
+    width:400px;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.services-description{
+    text-align: center;
+}
+
+
+
+.form-group {
+    width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+    font-size: 1rem; /* Tamaño de fuente del texto del formulario */
+    padding: 10px; /* Añadir espacio alrededor del texto en el campo */
+    margin-bottom: 10px;
+
+}
+
+@media (max-width: 768px) {
+    main .container-fluid {
+        display: flex;
+    }
+
+    main .container-fluid .text {
+        font-size: 90%;
+    }
+
+    main .container-fluid .btn-primary {
+        font-size: 80%;
+    }
+
+    #mapa-tiana {
+        width: 100%; /* Hace que el mapa ocupe todo el ancho en pantallas pequeñas */
+        height: 300px; /* Ajusta la altura del mapa para pantallas pequeñas */
+    }
+    
+    .form-group {
+        font-size: 50%;
+    }
+}
+
+/*FOOTER*/
+.menu-footer{
+    background-color: #F5E8DC;
+}
+
+.img-logo {
+    width: 2rem;
+    max-height: rem;
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+
+}
+
+.title-contacto {
+    font-size: 1rem; 
+    margin-top: 2%;
+}
+
+p {
+    font-size: 0.8rem; 
+}
+
+
+/* Estilo para pantallas más pequeñas (por ejemplo, teléfonos) */
+@media (max-width: 768px) {
+
+    .menu-footer {
+        width: auto; /* Puedes ajustar el porcentaje según tus necesidades */
+
+    }
+    .menu-footer .container {
+        width: 100%; /* Puedes ajustar el porcentaje según tus necesidades */
+
+    }
+    .img-logo {
+        max-width: 50%; /* Puedes ajustar el porcentaje según tus preferencias */
+        max-height: auto;
+        margin: 0.2rem;
+    }
+
+    .menu-footer .container-fluid .title-contacto{
+        font-size: 80%;
+    }
+
+    p{
+        font-size: 80%;
+    }
+}

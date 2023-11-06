@@ -1,0 +1,164 @@
+body {
+    background-color: #fffef9;
+    width: 100vw;
+    margin: 0;
+}
+
+/*RESET*/
+* {
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+/*HEADER*/
+/*
+.menu-navegacion {
+    background-color: #F5E8DC;
+}
+*/
+.menu-nav {
+    position: fixed;
+    background-color: #F5E8DC;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.menu-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-nav .container .logo {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .menu-nav {
+        flex-direction: column; 
+    }
+
+    .list-indice {
+        flex-direction: column;
+    }
+}
+
+.menu-nav ul.list-indice {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    justify-content: space-between;
+    list-style: none;
+}
+.menu-nav .list-indice li{
+    margin: 0 10px;
+}
+.menu-nav .list-indice li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-nav .list-indice li > a:hover {
+    text-decoration: underline;
+    color: sienna;
+}
+
+/*MAIN*/
+
+
+main {
+    margin-top: 100px;    
+}
+
+main .container > div {
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    main .container {
+        display: flex;
+    }
+}
+
+
+.tiana-welcome {
+    width: 100%;
+    height: auto;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.text-container {
+    flex: 3;
+    /* padding-right: 20px; Agrega un espacio entre el texto y las imágenes */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.image-container div {
+    margin: 1rem;
+    overflow: hidden;
+    flex: 1;
+}
+.image-container div img {
+    width: 100%;
+}
+
+
+.projects-description{
+    text-align: center;
+}
+
+.title-quienessomos{
+    font: bold;
+    text-align: right;
+    color: #230007;
+}
+
+.title-proyectos{
+    font: bold;
+    color: #230007;
+}
+
+.title-servicios{
+    font: bold;
+    color: #230007;
+    text-align: center;
+}
+
+.card{
+    width:400px;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.services-description{
+    text-align: center;
+}
+
+
+/*FOOTER*/
+.menu-footer{
+    background-color: #F5E8DC;
+
+}
+.title-medios-de-contacto{
+    color: #230007;
+    text-align: right;
+}
