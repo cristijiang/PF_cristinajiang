@@ -1,6 +1,13 @@
+// Mixin para centrar elementos
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu-nav {
   position: fixed;
-  background-color: #F5E8DC;
+  background: linear-gradient(to right, #F5E8DC, #E3CBB8);
   height: 100px;
   padding: 10px;
   box-sizing: border-box;
@@ -10,7 +17,7 @@
   margin: 0;
 
   .container {
-    display: flex;
+    @include center();
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -20,6 +27,11 @@
     .logo {
       max-width: 70%;
       max-height: 100%;
+      transition: transform 0.3s ease-in-out; // Agrega una transición suave a la propiedad 'transform'
+      
+      &:hover {
+        transform: scale(1.1); 
+      }
     }
 
     .list-indice {
@@ -32,12 +44,11 @@
       li {
         margin-right: 30px;
         font-size: 1rem;
-     
 
         a {
           text-decoration: none;
           color: rgb(31, 14, 14);
-      
+
           &:hover {
             text-decoration: underline;
             color: sienna;
@@ -49,6 +60,7 @@
 
   @media (max-width: 768px) {
     .container {
+      @include center();
       flex-direction: column;
       text-align: center;
 
@@ -58,15 +70,13 @@
 
       .list-indice {
         align-items: center;
-        
 
         li {
           margin-bottom: 10px;
-          font-size: 70%;
-          margin: 5px;
-
+          font-size: 0.6rem;
+          margin: 8px;
+        }
       }
     }
   }
-}
 }
