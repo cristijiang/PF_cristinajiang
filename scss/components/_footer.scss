@@ -1,0 +1,45 @@
+.menu-footer {
+    background-color: #F5E8DC;
+  
+    .img-logo {
+      width: 2rem;
+      max-height: rem;
+      max-width: 100%;
+      height: auto;
+      margin: 0.5rem;
+    }
+  
+    .title-contacto {
+      font-size: 1rem;
+      margin-top: 2%;
+    }
+  
+    p {
+      font-size: 0.8rem;
+    }
+  
+    @media (max-width: 768px) {
+  
+      .container {
+        width: 100%;
+        flex-direction: column;
+        
+      }
+  
+      .img-logo {
+        margin-top: 0.5rem;
+        max-width: 50%;
+        max-height: auto;
+      }
+  
+      .container-fluid .title-contacto {
+        font-size: 80%;
+        justify-content: center;
+        
+      }
+  
+      p {
+        font-size: 80%;
+      }
+    }
+  }

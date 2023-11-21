@@ -1,0 +1,268 @@
+.menu-nav {
+  position: fixed;
+  background-color: #F5E8DC;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.menu-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.menu-nav .container .logo {
+  max-width: 70%;
+  max-height: 100%;
+}
+.menu-nav .container .list-indice {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  margin-right: 20px;
+}
+.menu-nav .container .list-indice li {
+  margin-right: 30px;
+  font-size: 1rem;
+}
+.menu-nav .container .list-indice li a {
+  text-decoration: none;
+  color: rgb(31, 14, 14);
+}
+.menu-nav .container .list-indice li a:hover {
+  text-decoration: underline;
+  color: sienna;
+}
+@media (max-width: 768px) {
+  .menu-nav .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-nav .container .logo {
+    max-height: 70%;
+  }
+  .menu-nav .container .list-indice {
+    align-items: center;
+  }
+  .menu-nav .container .list-indice li {
+    margin-bottom: 10px;
+    font-size: 70%;
+    margin: 5px;
+  }
+}
+
+.menu-footer {
+  background-color: #F5E8DC;
+}
+.menu-footer .img-logo {
+  width: 2rem;
+  max-height: rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem;
+}
+.menu-footer .title-contacto {
+  font-size: 1rem;
+  margin-top: 2%;
+}
+.menu-footer p {
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  .menu-footer .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu-footer .img-logo {
+    margin-top: 0.5rem;
+    max-width: 50%;
+    max-height: auto;
+  }
+  .menu-footer .container-fluid .title-contacto {
+    font-size: 80%;
+    justify-content: center;
+  }
+  .menu-footer p {
+    font-size: 80%;
+  }
+}
+
+main {
+  margin-top: 100px;
+}
+main .container > div {
+  margin: 1rem;
+}
+main .text {
+  justify-content: center;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+main .container-fluid {
+  margin-bottom: 10px;
+}
+main .container-fluid .estudio .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+}
+main .container-fluid .estudio .col-md-6 .text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+main .container-fluid .estudio .col-md-6 .img-fluid {
+  overflow: hidden;
+  height: 5rem;
+  width: 100%;
+}
+main .tiana-welcome {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+main .btn-primary {
+  background-color: #f9ebdb;
+  color: #040404;
+}
+main .btn-primary:hover {
+  background-color: #c9987c;
+}
+main #mapa-tiana {
+  margin-top: 20px;
+}
+main .form-group {
+  margin-top: 20px;
+}
+main .proyectos {
+  flex-direction: column;
+  align-items: center;
+}
+main .proyectos .text {
+  text-align: justify;
+  justify-content: center;
+  font-size: 1rem;
+  margin-left: 10px;
+  text-align: center;
+}
+main .proyectos .proyectos-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .proyectos .proyectos-proyectos .row .col-md-4 {
+  height: 35rem;
+  width: 30rem;
+  overflow: hidden;
+}
+main .proyectos .proyectos-proyectos .row .col-md-4 img {
+  overflow-x: hidden;
+  height: 20rem;
+  width: 100%;
+}
+main .proyectos .proyectos-proyectos .row .col-md-4 .projects-description {
+  text-align: justify;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+main .title-quienessomos {
+  font: bold;
+  text-align: right;
+  color: #230007;
+}
+main .title-proyectos {
+  font: bold;
+  color: #230007;
+}
+main .card {
+  width: 400px;
+}
+main .card-img {
+  width: 100%;
+}
+main .services-description {
+  text-align: center;
+  font-size: 1rem;
+}
+main .form-group {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  main .container-fluid {
+    display: flex;
+  }
+  main .container-fluid .text {
+    font-size: 90%;
+  }
+  main .container-fluid .btn-primary {
+    font-size: 80%;
+  }
+  main .proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+  }
+  main .proyectos .text {
+    font-size: 0.8rem;
+  }
+  main .proyectos .proyectos-proyectos .row {
+    align-items: center;
+    justify-content: center;
+  }
+  main .proyectos .proyectos-proyectos .row .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  main .proyectos .proyectos-proyectos .row .col-md-4 img {
+    align-items: center;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  main .proyectos .proyectos-proyectos .row .col-md-4 .projects-description {
+    text-align: justify;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  main #mapa-tiana {
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+  }
+  main .form-group {
+    font-size: 0.8rem;
+  }
+}
+main .services-description {
+  font-size: 0.8rem;
+}
+
+body {
+  background-color: F5E8DC;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=main.css.map */

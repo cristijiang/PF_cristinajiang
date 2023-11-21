@@ -1,0 +1,207 @@
+main {
+    margin-top: 100px;
+  
+    .container > div {
+      margin: 1rem;
+    }
+  
+    .text {
+      justify-content: center;
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+
+    .container-fluid {
+        margin-bottom: 10px;
+        .estudio {
+            .col-md-6 {
+                display: flex;
+                flex-direction: column;
+                height: 10rem;
+
+                .text{
+                    text-align: justify;
+                    margin-bottom: 20px;
+                }
+
+                .img-fluid {
+                    overflow: hidden;
+                    height: 5rem;
+                    width: 100%;
+                }  
+            }
+        }
+    }
+
+    .tiana-welcome {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+  
+    .btn-primary {
+      background-color: #f9ebdb;
+      color: #040404;
+  
+      &:hover {
+        background-color: #c9987c;
+      }
+    }
+  
+    #mapa-tiana {
+      margin-top: 20px;
+    }
+  
+    .form-group {
+      margin-top: 20px;
+    }
+
+    .proyectos {
+        flex-direction: column;  
+        align-items: center;    
+    
+        .text {
+            text-align: justify;
+            justify-content: center; 
+            font-size: 1rem;
+            margin-left: 10px;
+            text-align: center; 
+          }
+
+        .proyectos-proyectos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            
+            .row {
+                .col-md-4{
+                    height: 35rem;
+                    width: 30rem;
+                    overflow: hidden;
+                   
+                
+                    img{
+                        overflow-x: hidden;
+                        height: 20rem;
+                        width: 100%; 
+
+                    }
+                
+                .projects-description {
+                    text-align: justify; 
+                    text-align: center; 
+                    flex-wrap: wrap;
+                    margin: 10px; 
+                    }
+                }
+            }
+        }
+    }
+    
+    
+  
+    .title-quienessomos {
+      font: bold;
+      text-align: right;
+      color: #230007;
+    }
+  
+    .title-proyectos {
+      font: bold;
+      color: #230007;
+    }
+  
+  
+    .card {
+      width: 400px;
+    }
+  
+    .card-img {
+      width: 100%;
+    }
+  
+    .services-description {
+      text-align: center;
+      font-size: 1rem;
+    }
+  
+    .form-group {
+      width: 100%;
+      font-size: 1rem;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  
+    @media (max-width: 768px) {
+      .container-fluid {
+        display: flex;
+      }
+  
+      .container-fluid {
+        .text {
+            font-size: 90%;
+        }
+        .btn-primary {
+            font-size: 80%;
+        }
+      
+      }
+      
+    .proyectos {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;    
+        margin-right: 10px;
+        margin-left: 10px;
+        overflow: hidden;
+        width: auto;  
+        height: auto;  
+    
+        .text {
+            font-size: 0.8rem;
+          }
+            .proyectos-proyectos{
+                .row {
+                    align-items: center; 
+                    justify-content: center;  
+                    .col-md-4{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;        
+                        width: auto;  
+                        height: auto; 
+                        img{
+                            align-items: center;
+                            object-fit: cover;
+                            width: 100%;  
+                            height: auto;  
+                        }
+                    
+                    .projects-description {
+                        text-align: justify; 
+                        text-align: center; 
+                        flex-wrap: wrap;
+                        font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+      #mapa-tiana {
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    
+      }
+  
+      .form-group {
+        font-size: 0.8rem;
+      }
+    }
+
+    .services-description {
+        font-size: 0.8rem;
+      }
+  }

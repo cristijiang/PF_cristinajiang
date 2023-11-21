@@ -1,0 +1,274 @@
+body {
+    background-color: #fffef9;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*RESET*/
+* {
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+/*HEADER*/
+/*
+.menu-navegacion {
+    background-color: #F5E8DC;
+}
+*/
+.menu-nav {
+    position: fixed;
+    background-color: #F5E8DC;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+
+.menu-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-height: auto; 
+    width: 100%; 
+    max-width: 1600px; 
+    margin: 0; 
+}
+
+.menu-nav .container .logo {
+    justify-content: flex-start;
+    margin-left: 0; 
+    max-width: 70%; 
+    max-height: 100%;
+}
+
+.menu-nav .container .list-indice .text {
+    font-size: 1rem;
+}
+
+.menu-nav ul.list-indice {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 60%;
+}
+.menu-nav .list-indice li{
+    margin-right: 20px;
+}
+.menu-nav .list-indice li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.menu-nav .list-indice li > a:hover {
+    text-decoration: underline;
+    color: sienna;
+}
+
+@media (max-width: 768px) {
+    .menu-nav {
+        flex-direction: column; 
+    }
+
+    .menu-nav .container {
+         margin-left: 0;
+         max-width: 100%;
+    }
+
+    .menu-nav .container .logo{
+       max-width: 60%;
+    }
+
+    .list-indice {
+        flex-direction: column;
+        
+    }
+
+    .list-indice li {
+        margin-right: 0;
+        margin-bottom: 0;
+        justify-content:flex-end;
+    }
+
+    .menu-nav .container .list-indice .text {
+        font-size: 0.7rem;
+    }
+
+    .menu-nav ul.list-indice {
+        text-align: right;
+      }
+      
+    .menu-nav ul.list-indice li {
+        margin-right: 0;
+        margin-bottom: 0; 
+        line-height: 0.8;
+      }
+}
+
+/*MAIN*/
+
+main {
+    margin-top: 100px;    
+}
+
+main .container > div {
+    margin: 1rem;
+}
+
+.tiana-welcome {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+main .text {
+    text-align: justify;
+    font-size: 1rem; 
+}
+
+
+main .container-fluid  {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #f9ebdb;
+    color: #040404; 
+}
+
+.btn-primary:hover {
+    background-color: #c9987c; 
+}
+
+#mapa-tiana {
+    margin-top: 20px;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+.projects-description{
+    text-align: center;
+}
+
+.title-quienessomos{
+    font: bold;
+    text-align: right;
+    color: #230007;
+}
+
+.title-proyectos{
+    font: bold;
+    color: #230007;
+}
+
+.title-servicios{
+    font: bold;
+    color: #230007;
+    text-align: center;
+}
+
+.card{
+    width:400px;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.services-description{
+    text-align: center;
+}
+
+
+.form-group {
+    width: 100%; 
+    font-size: 1rem; 
+    padding: 10px; 
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    main .container-fluid {
+        display: flex;
+    }
+
+    main .container-fluid .text {
+        font-size: 90%;
+    }
+
+    main .container-fluid .btn-primary {
+        font-size: 80%;
+    }
+
+    #mapa-tiana {
+        width: 100%; 
+        height: 300px; 
+    }
+    
+    .form-group {
+        font-size: 50%;
+    }
+}
+
+/*FOOTER*/
+.menu-footer{
+    background-color: #F5E8DC;
+}
+
+.img-logo {
+    width: 2rem;
+    max-height: rem;
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.title-contacto {
+    font-size: 1rem; 
+    margin-top: 2%;
+}
+
+p {
+    font-size: 0.8rem; 
+}
+
+
+@media (max-width: 768px) {
+
+    .menu-footer {
+        width: auto; 
+
+    }
+    .menu-footer .container {
+        width: 100%; 
+
+    }
+    .img-logo {
+        max-width: 50%;
+        max-height: auto;
+        margin: 0.2rem;
+    }
+
+    .menu-footer .container-fluid .title-contacto {
+        font-size: 80%;
+    }
+
+    p{
+        font-size: 80%;
+    }
+}
